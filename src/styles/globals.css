@@ -92,3 +92,9 @@ body {
 /* Hide scrollbar for filter strip */
 .scrollbar-hide::-webkit-scrollbar { display: none; }
 .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* TAB editor cursor blink */
+@keyframes tab-cursor-blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}

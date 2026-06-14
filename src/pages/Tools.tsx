@@ -1,16 +1,19 @@
 import { NavLink, Outlet, useLocation } from 'react-router-dom'
 
 const TOOLS = [
-  { to: '/tools/tuner', label: 'Tuner', icon: '🎵', desc: 'Chromatyczny tuner z wykrywaniem dźwięku' },
-  { to: '/tools/metronome', label: 'Metronom', icon: '🥁', desc: 'Wizualny i audio klik' },
+  { to: '/tools/tuner',     label: 'Tuner',       icon: '🎵', desc: 'Chromatyczny tuner z wykrywaniem dźwięku' },
+  { to: '/tools/metronome', label: 'Metronom',     icon: '🥁', desc: 'Wizualny i audio klik' },
+  { to: '/tools/tab',       label: 'Edytor TAB',  icon: '🎸', desc: 'Edytor tabulatury gitarowej z klawiaturą' },
 ]
 
 export function ToolsPage() {
   const location = useLocation()
-  const isRoot = location.pathname === '/tools'
+  const isRoot    = location.pathname === '/tools'
+  const isTabEditor = location.pathname.startsWith('/tools/tab')
 
   return (
-    <div className="px-4 py-6 max-w-lg mx-auto">
+    // TAB editor needs full width — remove max-w-lg constraint for it
+    <div className={`px-4 py-6 ${isTabEditor ? 'max-w-6xl' : 'max-w-lg'} mx-auto`}>
       <div className="mb-6">
         <h1 className="text-2xl font-bold text-white mb-1">Narzędzia</h1>
       </div>
@@ -30,7 +33,7 @@ export function ToolsPage() {
             }
           >
             <span>{icon}</span>
-            <span>{label}</span>
+            <span className="hidden sm:inline">{label}</span>
           </NavLink>
         ))}
       </div>
