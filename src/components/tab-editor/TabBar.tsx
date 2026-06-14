@@ -1,21 +1,21 @@
 import type { TabBar as TabBarType, TabNote as TabNoteType, TabCursor } from '@/types/tab'
-import { BEATS_PER_BAR, getStringCount, getStringNames } from '@/lib/tabUtils'
+import { BEATS_PER_BAR, getStringCount, getStringNames, isColumnInSelection, GRID_RES, type TabSelection } from '@/lib/tabUtils'
 import { TabNote } from './TabNote'
 import { TabCursor as TabCursorOverlay } from './TabCursor'
 
-// Grid constants (16th note resolution, 24 px per column)
-const GRID_RES   = 0.25   // quarter beats per grid column
-const COL_W      = 24     // px per 16th-note column
-const ROW_H      = 30     // px per string row
-const LABEL_W    = 24     // px for string name label
-const BARLINE_W  = 6      // px for right barline
-const HEADER_H   = 18     // px for bar number header
+// Grid constants
+const COL_W     = 24   // px per 16th-note column
+const ROW_H     = 30   // px per string row
+const LABEL_W   = 24   // px for string name label
+const BARLINE_W = 6    // px for right barline
+const HEADER_H  = 18   // px for bar number header
 
 interface Props {
   bar: TabBarType
   barIndex: number
   cursor: TabCursor
   instrument: 'guitar' | 'bass'
+  selection: TabSelection | null
   onCursorChange: (c: TabCursor) => void
 }
 
@@ -31,13 +31,12 @@ function buildNoteGrid(bar: TabBarType, nStrings: number, nCols: number): Record
   return grid
 }
 
-export function TabBar({ bar, barIndex, cursor, instrument, onCursorChange }: Props) {
-  const nStrings = getStringCount(instrument)
+export function TabBar({ bar, barIndex, cursor, instrument, selection, onCursorChange }: Props) {
+  const nStrings   = getStringCount(instrument)
   const stringNames = getStringNames(instrument)
-  const bpb = BEATS_PER_BAR[bar.timeSignature]
-  const nCols = Math.round(bpb / GRID_RES)
-
-  const noteGrid = buildNoteGrid(bar, nStrings, nCols)
+  const bpb        = BEATS_PER_BAR[bar.timeSignature]
+  const nCols      = Math.round(bpb / GRID_RES)
+  const noteGrid   = buildNoteGrid(bar, nStrings, nCols)
 
   const isCursorBar = cursor.barIndex === barIndex
   const cursorCol   = isCursorBar ? Math.round(cursor.beatPosition / GRID_RES) : -1
@@ -50,7 +49,7 @@ export function TabBar({ bar, barIndex, cursor, instrument, onCursorChange }: Pr
       className="relative shrink-0 select-none"
       style={{ width: totalW, height: totalH }}
     >
-      {/* Bar number header */}
+      {/* Bar number */}
       <div
         className="absolute top-0 left-0 right-0 flex items-center justify-center text-[10px] font-mono text-muted"
         style={{ height: HEADER_H, paddingLeft: LABEL_W }}
@@ -58,7 +57,7 @@ export function TabBar({ bar, barIndex, cursor, instrument, onCursorChange }: Pr
         {bar.barNumber}
       </div>
 
-      {/* Cursor column overlay (spans all string rows) */}
+      {/* Cursor column overlay */}
       {isCursorBar && cursorCol >= 0 && cursorCol < nCols && (
         <TabCursorOverlay
           left={LABEL_W + cursorCol * COL_W}
@@ -68,13 +67,13 @@ export function TabBar({ bar, barIndex, cursor, instrument, onCursorChange }: Pr
         />
       )}
 
-      {/* Active string row highlight within cursor column */}
+      {/* Active string within cursor column */}
       {isCursorBar && cursorCol >= 0 && cursorCol < nCols && (
         <div
           className="absolute z-20 rounded-sm pointer-events-none"
           style={{
             left: LABEL_W + cursorCol * COL_W,
-            top: HEADER_H + (cursor.string - 1) * ROW_H,
+            top:  HEADER_H + (cursor.string - 1) * ROW_H,
             width: COL_W,
             height: ROW_H,
             backgroundColor: 'rgba(99, 102, 241, 0.4)',
@@ -104,11 +103,13 @@ export function TabBar({ bar, barIndex, cursor, instrument, onCursorChange }: Pr
 
             {/* Note cells */}
             {Array.from({ length: nCols }, (_, cIdx) => {
-              const beatPos = +(cIdx * GRID_RES).toFixed(4)
-              const isBeat  = cIdx % 4 === 0   // quarter-note boundary
-              const note    = noteGrid[`${strNum}-${cIdx}`]
-              const isActiveCursorCell =
-                isCursorBar && cIdx === cursorCol && strNum === cursor.string
+              const beatPos    = +(cIdx * GRID_RES).toFixed(4)
+              const isBeat     = cIdx % 4 === 0
+              const note       = noteGrid[`${strNum}-${cIdx}`]
+              const isActiveCursorCell = isCursorBar && cIdx === cursorCol && strNum === cursor.string
+              const isSelected = selection
+                ? isColumnInSelection(barIndex, cIdx, selection, bpb)
+                : false
 
               return (
                 <div
@@ -117,8 +118,9 @@ export function TabBar({ bar, barIndex, cursor, instrument, onCursorChange }: Pr
                   style={{
                     width: COL_W,
                     height: ROW_H,
-                    borderLeft: isBeat ? '1px solid rgba(148,163,184,0.2)' : undefined,
+                    borderLeft:   isBeat ? '1px solid rgba(148,163,184,0.2)' : undefined,
                     borderBottom: '1px solid rgba(148,163,184,0.15)',
+                    backgroundColor: isSelected ? 'rgba(99,102,241,0.18)' : undefined,
                   }}
                   onClick={() =>
                     onCursorChange({ barIndex, string: strNum, beatPosition: beatPos })
@@ -129,6 +131,7 @@ export function TabBar({ bar, barIndex, cursor, instrument, onCursorChange }: Pr
                       note={note}
                       instrument={instrument}
                       isActive={isActiveCursorCell}
+                      isSelected={isSelected}
                     />
                   ) : (
                     <span className="text-[10px] font-mono text-slate-600 dark:text-slate-700 select-none">

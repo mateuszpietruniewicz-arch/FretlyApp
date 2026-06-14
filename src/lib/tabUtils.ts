@@ -2,6 +2,9 @@ import { Note, Interval } from 'tonal'
 import { noteColor } from './tonal'
 import type { TabBar, TabCursor, TabDocument, TabNote, Duration, Dynamic, TimeSignature } from '@/types/tab'
 
+// Grid resolution: quarter beats per column (16th note = finest grid shown in editor)
+export const GRID_RES = 0.25
+
 // ─── Tunning ─────────────────────────────────────────────────────────────────
 
 const GUITAR_TUNING = ['E4', 'B3', 'G3', 'D3', 'A2', 'E2']  // strings 1-6, standard
@@ -187,6 +190,30 @@ export function moveCursor(
       return cursor
     }
   }
+}
+
+// ─── Selection helpers ───────────────────────────────────────────────────────
+
+export interface TabSelection {
+  start: TabCursor
+  end: TabCursor
+}
+
+function absCol(cursor: TabCursor, bpb: number): number {
+  const colsPerBar = Math.round(bpb / GRID_RES)
+  return cursor.barIndex * colsPerBar + Math.round(cursor.beatPosition / GRID_RES)
+}
+
+export function isColumnInSelection(
+  barIndex: number,
+  colIdx: number,
+  selection: TabSelection,
+  bpb: number
+): boolean {
+  const cellAbsCol = barIndex * Math.round(bpb / GRID_RES) + colIdx
+  const minC = Math.min(absCol(selection.start, bpb), absCol(selection.end, bpb))
+  const maxC = Math.max(absCol(selection.start, bpb), absCol(selection.end, bpb))
+  return cellAbsCol >= minC && cellAbsCol <= maxC
 }
 
 // ─── ASCII rendering ─────────────────────────────────────────────────────────

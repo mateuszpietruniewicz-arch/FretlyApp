@@ -1,4 +1,7 @@
 export { TabEditor } from './TabEditor'
+export { TabToolbar } from './TabToolbar'
 export { TabBar } from './TabBar'
 export { TabNote } from './TabNote'
 export { TabCursor } from './TabCursor'
+export { TabExportModal } from './TabExportModal'
+export { TabShortcuts } from './TabShortcuts'

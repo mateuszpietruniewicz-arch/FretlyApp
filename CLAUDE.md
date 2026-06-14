@@ -161,7 +161,7 @@ public/loops/*.mid      — 20 loopów MIDI (drums-{BPM}-{styl}-{part}.mid)
 ### Do zrobienia ⏳
 | Faza | Zakres |
 |---|---|
-| **7B** | Toolbar akcji (zaznaczanie, kopiuj/wklej), zapis lokalny (localStorage), wielokrotne zaznaczanie |
+| **7B** | ✅ Toolbar (TabToolbar), zaznaczanie Shift+←→, clipboard Ctrl+C/V/X, zapis localStorage (debounce 1s), TabExportModal, TabShortcuts |
 | **7C** | Odtwarzanie TAB przez `Tone.Sampler` z CDN gitarowym, synchronizacja kursora z odtwarzaniem |
 | **7D** | Eksport ASCII/TXT/MP3, zapis do Supabase (`riffs` tabela), Tonex MIDI, narzędzia na próbę (live looper) |
 | **Faza 8** | PWA: offline cache, ikony, instalacja na telefonie; VPS deployment; konta znajomych; ustawienia prywatności |

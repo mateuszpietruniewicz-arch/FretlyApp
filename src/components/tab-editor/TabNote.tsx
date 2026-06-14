@@ -6,29 +6,31 @@ interface Props {
   note: TabNoteType
   instrument: 'guitar' | 'bass'
   isActive: boolean
+  isSelected: boolean
 }
 
 const TECHNIQUE_LABELS: Record<string, string> = {
-  'h': 'h',
-  'p': 'p',
-  'b': 'b',
+  'h':    'h',
+  'p':    'p',
+  'b':    'b',
   'b1/2': 'b½',
-  'r': 'r',
-  '~': '~',
-  's': 's',
-  'S': 'S',
-  '/': '/',
-  '\\': '\\',
-  't': 't',
-  'PM': 'PM',
+  'r':    'r',
+  '~':    '~',
+  's':    's',
+  'S':    'S',
+  '/':    '/',
+  '\\':   '\\',
+  't':    't',
+  'PM':   'PM',
 }
 
-export function TabNote({ note, instrument, isActive }: Props) {
+export function TabNote({ note, instrument, isActive, isSelected }: Props) {
   const color = useMemo(() => {
     if (note.fret === null) return '#64748b'
     if (note.techniques.includes('x')) return '#94a3b8'
-    return getFretColor(note.string, note.fret, instrument)
-  }, [note.fret, note.string, note.techniques, instrument])
+    const base = getFretColor(note.string, note.fret, instrument)
+    return isSelected ? base : base  // color stays consistent; background on cell level handles selection
+  }, [note.fret, note.string, note.techniques, instrument, isSelected])
 
   const label = useMemo(() => {
     if (note.fret === null) return 'p'
@@ -41,8 +43,8 @@ export function TabNote({ note, instrument, isActive }: Props) {
   return (
     <div className="relative flex flex-col items-center justify-center w-full h-full">
       <span
-        className={`text-[11px] font-bold font-mono leading-none select-none transition-all ${isActive ? 'scale-110' : ''}`}
-        style={{ color }}
+        className={`text-[11px] font-bold font-mono leading-none select-none transition-all ${isActive ? 'scale-110' : ''} ${isSelected ? 'brightness-125' : ''}`}
+        style={{ color, filter: isSelected ? 'brightness(1.3)' : undefined }}
       >
         {label}
       </span>
