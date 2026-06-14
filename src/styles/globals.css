@@ -1,19 +1,32 @@
 @import "tailwindcss";
 
-@theme {
-  /* Brand (purple) */
-  --color-brand-50: #faf5ff;
-  --color-brand-100: #f3e8ff;
-  --color-brand-200: #e9d5ff;
-  --color-brand-300: #d8b4fe;
-  --color-brand-400: #c084fc;
-  --color-brand-500: #a855f7;
-  --color-brand-600: #9333ea;
-  --color-brand-700: #7e22ce;
-  --color-brand-800: #6b21a8;
-  --color-brand-900: #581c87;
+/* ── Class-based dark mode ─────────────────────────── */
+@variant dark (&:where(.dark, .dark *));
 
-  /* 12-note color system (CONTEXT_2.md) — spójny przez całą aplikację */
+/* ── Design tokens ─────────────────────────────────── */
+@theme inline {
+  /* Brand */
+  --color-brand-50:  oklch(97% 0.03 307);
+  --color-brand-100: oklch(93% 0.07 307);
+  --color-brand-200: oklch(87% 0.13 307);
+  --color-brand-300: oklch(79% 0.19 307);
+  --color-brand-400: oklch(70% 0.24 307);
+  --color-brand-500: oklch(61% 0.27 307);
+  --color-brand-600: oklch(52% 0.27 307);
+  --color-brand-700: oklch(43% 0.25 307);
+  --color-brand-800: oklch(35% 0.22 307);
+  --color-brand-900: oklch(27% 0.18 307);
+
+  /* Semantic surface tokens — values set in :root / .dark */
+  --color-bg:          var(--bg);
+  --color-surface:     var(--surface);
+  --color-surface-2:   var(--surface-2);
+  --color-border:      var(--border);
+  --color-text:        var(--text);
+  --color-muted:       var(--muted);
+  --color-subtle:      var(--subtle);
+
+  /* 12-note color system (CONTEXT_2.md) */
   --color-note-C:  #ef4444;
   --color-note-Cs: #fb923c;
   --color-note-D:  #f97316;
@@ -28,9 +41,30 @@
   --color-note-B:  #9f1239;
 }
 
-* {
-  box-sizing: border-box;
+/* ── Light mode (default) ───────────────────────────── */
+:root {
+  --bg:       #f1f5f9;
+  --surface:  #ffffff;
+  --surface-2:#f8fafc;
+  --border:   #e2e8f0;
+  --text:     #0f172a;
+  --muted:    #475569;
+  --subtle:   #94a3b8;
 }
+
+/* ── Dark mode ──────────────────────────────────────── */
+.dark {
+  --bg:       #0f172a;
+  --surface:  #1e293b;
+  --surface-2:#0f172a;
+  --border:   #334155;
+  --text:     #f1f5f9;
+  --muted:    #94a3b8;
+  --subtle:   #475569;
+}
+
+/* ── Base reset ─────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
 
 html, body, #root {
   height: 100%;
@@ -39,11 +73,22 @@ html, body, #root {
 }
 
 body {
+  background-color: var(--bg);
+  color: var(--text);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: system-ui, -apple-system, sans-serif;
 }
 
-/* iOS safe area for bottom nav */
-.pb-safe {
-  padding-bottom: env(safe-area-inset-bottom, 0);
+/* iOS safe area */
+.pb-safe { padding-bottom: env(safe-area-inset-bottom, 0); }
+
+/* Modal slide-up animation */
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
 }
+
+/* Hide scrollbar for filter strip */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
