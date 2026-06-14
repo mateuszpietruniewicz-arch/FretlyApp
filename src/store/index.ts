@@ -1,5 +1,6 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
+import type { User } from '@supabase/supabase-js'
 import type { Instrument, UserProfile, UserStats } from '@/types'
 
 interface AppState {
@@ -24,6 +25,20 @@ interface AppState {
   setPitchSensitivity: (v: number) => void
   setMetronomeBpm: (bpm: number) => void
 }
+
+// ── Auth store (non-persisted — Supabase User contains sensitive tokens) ──────
+
+interface AuthState {
+  supabaseUser: User | null
+  setSupabaseUser: (user: User | null) => void
+}
+
+export const useAuthStore = create<AuthState>()((set) => ({
+  supabaseUser: null,
+  setSupabaseUser: (supabaseUser) => set({ supabaseUser }),
+}))
+
+// ── App store (persisted) ─────────────────────────────────────────────────────
 
 export const useAppStore = create<AppState>()(
   persist(
