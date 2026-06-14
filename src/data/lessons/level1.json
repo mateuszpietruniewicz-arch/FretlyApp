@@ -1,0 +1,254 @@
+[
+  {
+    "id": "lesson_001",
+    "title": "Otwarte struny gitary",
+    "level": 1,
+    "category": "notes",
+    "instrument": "guitar",
+    "xp_reward": 20,
+    "duration_minutes": 5,
+    "content": {
+      "theory": "Gitara elektryczna ma 6 strun. Każda struna ma swoją nazwę i dźwięk gdy grasz bez przyciskania progu — to właśnie 'otwarta struna'. Od najgrubszej do najcieńszej: E, A, D, G, B, E. Zapamiętaj je w kolejności: Każda Altówka Daje Grubą Basową E-nergie.",
+      "tips": [
+        "Kostka uderza strunę pod kątem 45°",
+        "Graj delikatnie — nie musisz siłą",
+        "Słuchaj każdego dźwięku i zapamiętaj jego brzmienie"
+      ],
+      "exercise": {
+        "type": "pitch_detection",
+        "description": "Zagraj każdą otwartą strunę od najgrubszej do najcieńszej. Poczekaj aż aplikacja potwierdzi każdą nutę.",
+        "notes_to_play": ["E2", "A2", "D3", "G3", "B3", "E4"],
+        "order": "sequential",
+        "tempo": null,
+        "repeat": 2
+      }
+    }
+  },
+  {
+    "id": "lesson_002",
+    "title": "Pozycja rąk i kostka",
+    "level": 1,
+    "category": "technique",
+    "instrument": "guitar",
+    "xp_reward": 15,
+    "duration_minutes": 8,
+    "content": {
+      "theory": "Dobra technika od początku oszczędza ci miesięcy złych nawyków. Lewa ręka: kciuk za środkiem gryfu, palce prostopadłe do strun, przyciśnij tuż za progiem (nie na progu). Prawa ręka: kostka pod kątem 45° do strun, ruch z nadgarstka.",
+      "tips": [
+        "Kciuk lewej ręki zawsze za gryfem, nie nad nim",
+        "Paznokcie lewej ręki — krótko przystrzyżone",
+        "Kostka trzymana luźno, nie zaciśnięta",
+        "Ćwicz przed lustrem — pilnuj postawy"
+      ],
+      "exercise": {
+        "type": "pitch_detection",
+        "description": "Zagraj otwartą strunę E (najcieńszą) 8 razy równo. Skup się na technice, nie prędkości.",
+        "notes_to_play": ["E4", "E4", "E4", "E4", "E4", "E4", "E4", "E4"],
+        "order": "sequential",
+        "tempo": 60,
+        "repeat": 1
+      }
+    }
+  },
+  {
+    "id": "lesson_003",
+    "title": "Twoja pierwsza nuta — F",
+    "level": 1,
+    "category": "notes",
+    "instrument": "guitar",
+    "xp_reward": 20,
+    "duration_minutes": 8,
+    "content": {
+      "theory": "F to pierwsza nuta którą zagrasz wciskając palec. Na strunie 1 (najcieńsza E4), przyciśnij prog 1 palcem wskazującym — to jest F4. Przyciśnij tuż za metalowym progiem, nie na nim. Nie za mocno, nie za słabo.",
+      "tips": [
+        "Palec wskazujący tuż ZA progiem 1 (od strony główki gitary)",
+        "Nie dotykaj innych strun",
+        "Sprawdź w tunerze czy nuta brzmi czysto",
+        "Jeśli brzęczy — przyciśnij mocniej lub przesuń palec bliżej progu"
+      ],
+      "exercise": {
+        "type": "pitch_detection",
+        "description": "Zagraj naprzemiennie: otwarte E4, potem F4 (prog 1). Poczekaj na potwierdzenie każdej nuty.",
+        "notes_to_play": ["E4", "F4", "E4", "F4", "E4", "F4"],
+        "order": "sequential",
+        "tempo": null,
+        "repeat": 2
+      }
+    }
+  },
+  {
+    "id": "lesson_004",
+    "title": "Nuty na strunie E — E, F, G",
+    "level": 1,
+    "category": "notes",
+    "instrument": "guitar",
+    "xp_reward": 25,
+    "duration_minutes": 10,
+    "content": {
+      "theory": "Na strunie 1 (E4) masz trzy pierwsze nuty: E4 (otwarty), F4 (prog 1) i G4 (prog 3). Uwaga — między F i G jest prog 2 (F#/Gb) który pomijamy na razie. Progi 0-1-3 gramy 3 różnymi palcami: wskazującym (1), środkowym (2) i serdecznym (4).",
+      "tips": [
+        "Palec 1 na progu 1, palec 2 na progu 2 (pomijamy), palec 4 na progu 3",
+        "Staraj się nie zdejmować palca 1 gdy grasz G4",
+        "Graj powoli i czysto — szybkość przyjdzie sama"
+      ],
+      "exercise": {
+        "type": "pitch_detection",
+        "description": "Zagraj E4 → F4 → G4 i z powrotem G4 → F4 → E4. Powtórz 3 razy.",
+        "notes_to_play": ["E4", "F4", "G4", "G4", "F4", "E4"],
+        "order": "sequential",
+        "tempo": 60,
+        "repeat": 3
+      }
+    }
+  },
+  {
+    "id": "lesson_005",
+    "title": "Nuty na strunie B — B, C, D",
+    "level": 1,
+    "category": "notes",
+    "instrument": "guitar",
+    "xp_reward": 25,
+    "duration_minutes": 10,
+    "content": {
+      "theory": "Struna 2 (B3) daje ci kolejne nuty: B3 (otwarta), C4 (prog 1), D4 (prog 3). To dokładnie ten sam układ palców co na strunie 1 — prog 0, prog 1, prog 3.",
+      "tips": [
+        "Używaj tych samych palców co na strunie E",
+        "Ćwicz przejście między strunami E i B",
+        "B3 brzmi ciemniej niż E4 — oba są czyste i piękne"
+      ],
+      "exercise": {
+        "type": "pitch_detection",
+        "description": "Zagraj B3 → C4 → D4, potem E4 → F4 → G4. Poczuj różnicę między strunami.",
+        "notes_to_play": ["B3", "C4", "D4", "E4", "F4", "G4"],
+        "order": "sequential",
+        "tempo": 60,
+        "repeat": 2
+      }
+    }
+  },
+  {
+    "id": "lesson_006",
+    "title": "Nuty na strunie G — G i A",
+    "level": 1,
+    "category": "notes",
+    "instrument": "guitar",
+    "xp_reward": 20,
+    "duration_minutes": 8,
+    "content": {
+      "theory": "Struna 3 (G3) to twoja pierwsza nuta bez sharp/flat na progu 2. G3 (otwarta) i A3 (prog 2, palec środkowy). Prosta para — zapamiętasz ją w 5 minut.",
+      "tips": [
+        "A3 jest na progu 2 — palec środkowy",
+        "G3 to jedyna struna otwarta zaczynająca się od G",
+        "Ćwicz G → A → G rytmicznie"
+      ],
+      "exercise": {
+        "type": "pitch_detection",
+        "description": "G3 → A3 → G3. Powtórz 4 razy w równym tempie.",
+        "notes_to_play": ["G3", "A3", "G3", "A3", "G3", "A3", "G3", "A3"],
+        "order": "sequential",
+        "tempo": 70,
+        "repeat": 1
+      }
+    }
+  },
+  {
+    "id": "lesson_007",
+    "title": "Jak działa gryf — kroki i półkroki",
+    "level": 1,
+    "category": "theory",
+    "instrument": "both",
+    "xp_reward": 15,
+    "duration_minutes": 6,
+    "content": {
+      "theory": "Każdy prog na gitarze to półton (pół kroku). Dwa progi = cały ton. Dlatego między E i F jest 1 prog (półton), ale między F i G są 2 progi (cały ton). To samo dotyczy H-C (B-C w notacji angielskiej). Ta zasada jest zawsze prawdziwa na każdej strunie i każdym instrumencie.",
+      "tips": [
+        "12 progów wyżej = ta sama nuta, oktawę wyżej",
+        "Progi to półtony — podstawa całej muzyki zachodniej",
+        "Zapamiętaj: E-F i B-C to naturalne półtony (bez progu między nimi)"
+      ],
+      "exercise": {
+        "type": "listening",
+        "description": "Zagraj E4 (prog 0) i F4 (prog 1) — to półton. Potem E4 i G4 (prog 3) — to cały i pół tonu. Poczuj różnicę.",
+        "notes_to_play": ["E4", "F4", "E4", "G4"],
+        "order": "sequential",
+        "tempo": null,
+        "repeat": 2
+      }
+    }
+  },
+  {
+    "id": "lesson_008",
+    "title": "Łączenie 3 strun — melodia",
+    "level": 1,
+    "category": "notes",
+    "instrument": "guitar",
+    "xp_reward": 30,
+    "duration_minutes": 12,
+    "content": {
+      "theory": "Masz już nuty na 3 strunach (G, B, E). Teraz połącz je w melodię. Poruszanie się między strunami to podstawa solowania. Kluczowe: gdy przechodzisz na niższą strunę (od E do B do G), prawa ręka uderza strunę w dół (downstroke), wracając — w górę (upstroke).",
+      "tips": [
+        "Zmianę struny ćwicz powoli — precyzja ważniejsza niż szybkość",
+        "Down-up-down-up — naprzemienne kostki",
+        "Słuchaj czy każda nuta brzmi czysto przed przejściem do następnej"
+      ],
+      "exercise": {
+        "type": "pitch_detection",
+        "description": "Zagraj prostą sekwencję przez 3 struny: E4, D4, C4, B3, A3, G3",
+        "notes_to_play": ["E4", "D4", "C4", "B3", "A3", "G3"],
+        "order": "sequential",
+        "tempo": 60,
+        "repeat": 3
+      }
+    }
+  },
+  {
+    "id": "lesson_009",
+    "title": "Rytm — ćwierćnuta i ósemka",
+    "level": 1,
+    "category": "theory",
+    "instrument": "both",
+    "xp_reward": 20,
+    "duration_minutes": 10,
+    "content": {
+      "theory": "Rytm to fundament muzyki. W metrum 4/4 (najpopularniejszym) masz 4 uderzenia w każdym takcie. Ćwierćnuta = 1 uderzenie. Ósemka = pół uderzenia (między uderzeniami mówisz 'i'). Policz: 1 i 2 i 3 i 4 i. Ćwierćnuty grasz tylko na liczbach, ósemki na każdym 'i'.",
+      "tips": [
+        "Zacznij od metronom BPM 60 — bardzo wolno",
+        "Stukaj nogą na każde uderzenie",
+        "Nie śpiesz się — rytm musi być jak zegar"
+      ],
+      "exercise": {
+        "type": "pitch_detection",
+        "description": "Włącz metronom 70 BPM. Zagraj E4 na każde uderzenie metronomu (4 razy na takt).",
+        "notes_to_play": ["E4", "E4", "E4", "E4", "E4", "E4", "E4", "E4"],
+        "order": "sequential",
+        "tempo": 70,
+        "repeat": 2
+      }
+    }
+  },
+  {
+    "id": "lesson_010",
+    "title": "Pierwsze struny basu — E, A, D, G",
+    "level": 1,
+    "category": "notes",
+    "instrument": "bass",
+    "xp_reward": 20,
+    "duration_minutes": 6,
+    "content": {
+      "theory": "Gitara basowa ma 4 struny (standardowy bas). Od najgrubszej: E1, A1, D2, G2. Bas gra w niskim rejestrze i razem z perkusją tworzy sekcję rytmiczną. Twoje zadanie to trzymać rytm i tonację — fundament całego brzmienia zespołu.",
+      "tips": [
+        "Graj palcami (index i middle) — nie kostką na początku",
+        "Tłum strunę po zagraniu dla czystego brzmienia",
+        "Bas gra rzadziej niż gitara — każda nuta ma wagę"
+      ],
+      "exercise": {
+        "type": "pitch_detection",
+        "description": "Zagraj każdą otwartą strunę basu od najgrubszej do najcieńszej.",
+        "notes_to_play": ["E1", "A1", "D2", "G2"],
+        "order": "sequential",
+        "tempo": null,
+        "repeat": 3
+      }
+    }
+  }
+]

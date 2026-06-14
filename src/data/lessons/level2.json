@@ -1,0 +1,256 @@
+[
+  {
+    "id": "lesson_011",
+    "title": "Czym jest pentatonika molowa",
+    "level": 2,
+    "category": "scales",
+    "instrument": "guitar",
+    "xp_reward": 30,
+    "duration_minutes": 8,
+    "content": {
+      "theory": "Pentatonika molowa to 5-nutowa skala — fundament bluesa, rocka i metalu. A minor pentatonic: A, C, D, E, G. Pięć nut zamiast siedmiu — mniej nuty, mniej błędów, więcej muzyki. 90% riffów i solówek które znasz pochodzi z tej skali.",
+      "tips": [
+        "5 nut = 5 bezpiecznych wyborów przy improwizacji",
+        "Zacznij zawsze od nuty A (rootNote) — brzmi 'w domu'",
+        "Graj powoli i słuchaj jak każda nuta brzmi nad progressją Am"
+      ],
+      "exercise": {
+        "type": "listening",
+        "description": "Posłuchaj 5 nut skali Am pentatonicznej zagranych powoli. Zaśpiewaj je razem z gitarą.",
+        "notes_to_play": ["A2", "C3", "D3", "E3", "G3", "A3"],
+        "order": "sequential",
+        "tempo": 60,
+        "repeat": 3
+      }
+    }
+  },
+  {
+    "id": "lesson_012",
+    "title": "Pentatonika Am — Box 1 (pozycja 5)",
+    "level": 2,
+    "category": "scales",
+    "instrument": "guitar",
+    "xp_reward": 50,
+    "duration_minutes": 15,
+    "content": {
+      "theory": "Box 1 to najpopularniejsza pozycja pentatoniki Am. Grasz w okolicach progu 5 (bliżej środka gryfu). Wzór na każdej strunie: 2 nuty per struna, odległość 3 progi (lub 2). Zacznij od struny 6 na progu 5 (A2). Idź w górę: 5-8, 5-7, 5-7, 5-7, 5-8, 5-8.",
+      "tips": [
+        "Próg 5 zawsze palec wskazujący, próg 7-8 palec serdeczny/mały",
+        "Ćwicz w górę I W DÓŁ — w dół jest trudniejszy",
+        "Graj z metronom 60 BPM aż wejdzie w krew",
+        "Kiedy grasz płynnie — zwiększ BPM o 5"
+      ],
+      "exercise": {
+        "type": "pitch_detection",
+        "description": "Zagraj Box 1 Am pentatonic od dołu do góry: A2-C3-D3-E3-G3-A3-C4-D4-E4-G4-A4-C5",
+        "notes_to_play": ["A2", "C3", "D3", "E3", "G3", "A3", "C4", "D4", "E4", "G4", "A4", "C5"],
+        "order": "sequential",
+        "tempo": 60,
+        "repeat": 3
+      }
+    }
+  },
+  {
+    "id": "lesson_013",
+    "title": "Pentatonika Am — ćwiczenie rytmiczne",
+    "level": 2,
+    "category": "scales",
+    "instrument": "guitar",
+    "xp_reward": 40,
+    "duration_minutes": 12,
+    "content": {
+      "theory": "Sama znajomość nut to za mało — musisz grać je rytmicznie i muzycznie. Ćwiczenie: graj każdą nutę Box 1 jako ćwierćnutę przy metronome 80 BPM. Potem próbuj grać ósemkami (dwa razy szybciej). Słuchaj jak nuty brzmią 'w rytmie'.",
+      "tips": [
+        "Metronom to twój przyjaciel, nie wróg",
+        "Graj DOWN-UP kostką przy ósemkach (alternate picking)",
+        "Możesz też nucić każdą nutę — to bardzo pomaga zapamiętać"
+      ],
+      "exercise": {
+        "type": "pitch_detection",
+        "description": "Zagraj pełną skalę Am pentatonic w górę i w dół przy 80 BPM. Równe ćwierćnuty.",
+        "notes_to_play": ["A2", "C3", "D3", "E3", "G3", "A3", "C4", "D4", "E4", "G4", "A4", "G4", "E4", "D4", "C4", "A3", "G3", "E3", "D3", "C3", "A2"],
+        "order": "sequential",
+        "tempo": 80,
+        "repeat": 2
+      }
+    }
+  },
+  {
+    "id": "lesson_014",
+    "title": "Twój pierwszy akord — Em",
+    "level": 2,
+    "category": "chords",
+    "instrument": "guitar",
+    "xp_reward": 35,
+    "duration_minutes": 10,
+    "content": {
+      "theory": "Em (E minor) to najłatwiejszy akord na gitarze. Tylko 2 palce! Palec środkowy na prog 2 struny A, palec serdeczny na prog 2 struny D. Reszta strun otwarta. Zagraj wszystkie 6 strun razem kostką od góry (od struny E2 do E4).",
+      "tips": [
+        "Ułóż palce prostopadle — nie tłum sąsiednich strun",
+        "Sprawdź każdą strunę osobno czy brzmi czysto",
+        "Ćwicz: ułóż palce → zabarwuj → zdejmij → powtórz",
+        "Em to Twój dom — wracaj do niego zawsze gdy nie wiesz co zagrać"
+      ],
+      "exercise": {
+        "type": "pitch_detection",
+        "description": "Zagraj akord Em — uderz wszystkie 6 strun. Trzymaj przez 4 uderzenia metronomu.",
+        "notes_to_play": ["E2", "B2", "E3", "G3", "B3", "E4"],
+        "order": "simultaneous",
+        "tempo": 60,
+        "repeat": 4
+      }
+    }
+  },
+  {
+    "id": "lesson_015",
+    "title": "Akord Am",
+    "level": 2,
+    "category": "chords",
+    "instrument": "guitar",
+    "xp_reward": 35,
+    "duration_minutes": 12,
+    "content": {
+      "theory": "Am (A minor) to jeden z 4 akordów których musisz nauczyć się jako pierwszy. Układ: palec wskazujący na prog 1 struny B, palec środkowy na prog 2 struny D, palec serdeczny na prog 2 struny G. Struny A i E grasz otwarte, struny E (gruba) NIE grasz.",
+      "tips": [
+        "Struna E (najgrubsza) jest wyciszona — nie uderzaj jej lub tłum kciukiem",
+        "Am i Em są 'bliskimi krewnymi' — łatwo przechodzić między nimi",
+        "Ćwicz zmianę Em → Am powoli, liczy się precyzja"
+      ],
+      "exercise": {
+        "type": "pitch_detection",
+        "description": "Zagraj Am — od struny A2 do E4 (5 strun). Potem zmień na Em i z powrotem.",
+        "notes_to_play": ["A2", "E3", "A3", "C4", "E4"],
+        "order": "simultaneous",
+        "tempo": 60,
+        "repeat": 4
+      }
+    }
+  },
+  {
+    "id": "lesson_016",
+    "title": "Akord D",
+    "level": 2,
+    "category": "chords",
+    "instrument": "guitar",
+    "xp_reward": 35,
+    "duration_minutes": 12,
+    "content": {
+      "theory": "D major — jasny, radosny akord. Grasz tylko 4 najcieńsze struny (D, G, B, e). Układ: palec wskazujący prog 2 struna G, palec środkowy prog 2 struna e (najcieńsza), palec serdeczny prog 3 struna B. Strony E i A są wyciszone.",
+      "tips": [
+        "Grasz tylko 4 struny — od D3 do E4",
+        "Palce muszą być zwięzłe — D wymaga precyzji",
+        "D → Am to super przejście w wielu piosenkach"
+      ],
+      "exercise": {
+        "type": "pitch_detection",
+        "description": "Zagraj akord D (struny D, G, B, e). Potem ćwicz progresję D → Am → Em.",
+        "notes_to_play": ["D3", "A3", "D4", "F#4"],
+        "order": "simultaneous",
+        "tempo": 60,
+        "repeat": 4
+      }
+    }
+  },
+  {
+    "id": "lesson_017",
+    "title": "Progresja Em — Am — D",
+    "level": 2,
+    "category": "chords",
+    "instrument": "guitar",
+    "xp_reward": 60,
+    "duration_minutes": 15,
+    "content": {
+      "theory": "Em → Am → D to klasyczna progresja w tonacji E minor. Używana w dziesiątkach piosenek. Kluczowa umiejętność: zmiana akordu PRZED uderzeniem, a nie po. Gdy słyszysz koniec taktu — zacznij układać palce na nowy akord.",
+      "tips": [
+        "Zmiana akordu: zacznij przesuwać palce na 4. uderzeniu każdego taktu",
+        "Nie przerywaj rytmu kostki podczas zmiany",
+        "Em → Am: tylko palec wskazujący zmienia pozycję (z D na B)",
+        "Am → D: 3 palce zmieniają pozycję — ćwicz to osobno"
+      ],
+      "exercise": {
+        "type": "pitch_detection",
+        "description": "Zagraj progresję: 4 uderzenia Em, 4 uderzenia Am, 4 uderzenia D. Metronom 70 BPM.",
+        "notes_to_play": ["E2", "A2", "D3"],
+        "order": "sequential",
+        "tempo": 70,
+        "repeat": 4
+      }
+    }
+  },
+  {
+    "id": "lesson_018",
+    "title": "Pentatonika Em — Box 1 (pozycja 0/12)",
+    "level": 2,
+    "category": "scales",
+    "instrument": "guitar",
+    "xp_reward": 45,
+    "duration_minutes": 12,
+    "content": {
+      "theory": "Em pentatonic Box 1 zaczyna się od otwartych strun — to wyjątkowa pozycja bo możesz grać pierwsze nuty bez wciskania progów. Nuty: E, G, A, B, D. Na strunie 6 (E2): progi 0-3. Na strunie 5 (A2): progi 0-2. I tak dalej. To skala bluesa i rocka klasycznego.",
+      "tips": [
+        "Otwarte struny dają inny 'kolor' brzmienia niż progi",
+        "Em pentatonic i Am pentatonic mają te same nuty w innej kolejności",
+        "Spróbuj grać tę skalę nad progressją Em-Am-D"
+      ],
+      "exercise": {
+        "type": "pitch_detection",
+        "description": "Zagraj Em pentatonic Box 1 od dołu: E2-G2-A2-B2-D3-E3-G3-A3-B3-D4-E4",
+        "notes_to_play": ["E2", "G2", "A2", "B2", "D3", "E3", "G3", "A3", "B3", "D4", "E4"],
+        "order": "sequential",
+        "tempo": 70,
+        "repeat": 2
+      }
+    }
+  },
+  {
+    "id": "lesson_019",
+    "title": "12-bar Blues w A — progresja",
+    "level": 2,
+    "category": "theory",
+    "instrument": "guitar",
+    "xp_reward": 40,
+    "duration_minutes": 10,
+    "content": {
+      "theory": "12-bar blues to najważniejsza progresja w muzyce zachodniej. W tonacji A: 4 takty A7, 2 takty D7, 2 takty A7, 1 takt E7, 1 takt D7, 2 takty A7. Nad tą progresją możesz improwizować pentatoniką A minor i zawsze będzie brzmiało dobrze. Blues to 'muzyczne oczekiwanie i rozwiązanie'.",
+      "tips": [
+        "Zacznij od słuchania — rozpoznaj 12-taktową strukturę",
+        "A7, D7, E7 to akordy dominantowe — brzą napięciem",
+        "Pentatonika A minor brzmi bluesowo nad tym progressją"
+      ],
+      "exercise": {
+        "type": "listening",
+        "description": "Zagraj podstawowe nuty każdego akordu w kolejności bluesowej: A2 (4x), D3 (2x), A2 (2x), E3 (1x), D3 (1x), A2 (2x)",
+        "notes_to_play": ["A2", "A2", "A2", "A2", "D3", "D3", "A2", "A2", "E3", "D3", "A2", "A2"],
+        "order": "sequential",
+        "tempo": 80,
+        "repeat": 2
+      }
+    }
+  },
+  {
+    "id": "lesson_020",
+    "title": "Improwizacja — pentatonika nad bluesem",
+    "level": 2,
+    "category": "scales",
+    "instrument": "guitar",
+    "xp_reward": 80,
+    "duration_minutes": 20,
+    "content": {
+      "theory": "Czas połączyć wszystko! Włącz loop bluesowy w A (w trybie Jam) i graj dowolne nuty z Am pentatonic Box 1 (progi 5-8). Każda z 5 nut skali będzie brzmieć poprawnie. To jest improwizacja — nie ma złych nut, są tylko nuty zagrane w złym momencie. Graj powoli, słuchaj, reaguj na muzykę.",
+      "tips": [
+        "Nie spiesz się — jeden dźwięk zagrany z uczuciem > 20 szybkich nut",
+        "Wróć do nuty A (próg 5 struna 6) gdy chcesz 'wylądować'",
+        "Spróbuj powtórzyć krótki motyw (2-3 nuty) kilka razy",
+        "Muzyka to rozmowa — mów, potem słuchaj loopa"
+      ],
+      "exercise": {
+        "type": "free_jam",
+        "description": "Włącz loop Blues w A 80 BPM i improwizuj przez 2 minuty używając Am pentatonic Box 1.",
+        "notes_to_play": ["A2", "C3", "D3", "E3", "G3", "A3", "C4", "D4", "E4", "G4"],
+        "order": "free",
+        "tempo": 80,
+        "repeat": 1
+      }
+    }
+  }
+]
