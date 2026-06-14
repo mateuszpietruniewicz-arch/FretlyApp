@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Layout } from '@/components/layout/Layout'
 import { HomePage } from '@/pages/Home'
 import { LearnPage } from '@/pages/Learn'
+import { LessonPage } from '@/pages/LessonPage'
 import { JamPage } from '@/pages/Jam'
 import { ToolsPage } from '@/pages/Tools'
 import { TunerPage } from '@/pages/TunerPage'
@@ -24,6 +25,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/learn" element={<LearnPage />} />
+          <Route path="/learn/lesson/:id" element={<LessonPage />} />
           <Route path="/jam" element={<JamPage />} />
           <Route path="/tools" element={<ToolsPage />}>
             <Route path="tuner" element={<TunerPage />} />

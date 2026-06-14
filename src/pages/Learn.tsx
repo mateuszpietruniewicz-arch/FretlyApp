@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { useAppStore } from '@/store'
 import { Card } from '@/components/ui'
 import { LevelBadge, CategoryBadge } from '@/components/ui'
@@ -20,6 +21,7 @@ const FILTERS: { id: CategoryFilter; label: string }[] = [
 ]
 
 export function LearnPage() {
+  const navigate = useNavigate()
   const { stats, instrument } = useAppStore()
   const currentLevel: Level = ((stats?.current_level ?? 1) as Level)
   const [filter, setFilter] = useState<CategoryFilter>('all')
@@ -57,7 +59,7 @@ export function LearnPage() {
       {/* Lesson list */}
       <div className="space-y-2.5">
         {lessons.map((lesson) => (
-          <Card key={lesson.id} interactive padding="md" className="flex items-start gap-4">
+          <Card key={lesson.id} interactive padding="md" className="flex items-start gap-4" onClick={() => navigate(`/learn/lesson/${lesson.id}`)}>
             <div className="w-10 h-10 rounded-xl bg-brand-900/30 dark:bg-brand-900/40 flex items-center justify-center shrink-0 text-lg">
               {{ notes: '🎵', scales: '🎼', chords: '🎸', theory: '📖', technique: '🤙' }[lesson.category] ?? '📚'}
             </div>
