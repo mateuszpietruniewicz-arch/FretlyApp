@@ -11,6 +11,7 @@ import {
   GRID_RES,
   type TabSelection,
 } from '@/lib/tabUtils'
+import { saveRiff, loadRiff } from '@/lib/riffService'
 
 const MAX_HISTORY = 50
 const DRAFT_KEY   = 'fretlyapp_tab_draft'
@@ -30,6 +31,7 @@ export interface TabEditorState {
   selection: TabSelection | null
   clipboard: TabNote[] | null
   savedAt: string | null
+  isSaving: boolean
 }
 
 export interface TabEditorActions {
@@ -52,6 +54,8 @@ export interface TabEditorActions {
   paste: () => void
   cut: () => void
   clearDraft: () => void
+  saveToSupabase: (userId: string) => Promise<void>
+  loadFromSupabase: (riffId: string) => Promise<void>
   onKeyDown: (e: React.KeyboardEvent<HTMLElement>) => void
 }
 
@@ -77,6 +81,7 @@ export function useTabEditor(): TabEditorState & TabEditorActions {
   const [selection, setSelection]               = useState<TabSelection | null>(null)
   const [clipboard, setClipboard]               = useState<TabNote[] | null>(null)
   const [savedAt, setSavedAt]                   = useState<string | null>(null)
+  const [isSaving, setIsSaving]                 = useState(false)
 
   // Always-current refs (safe to read from callbacks / timeouts)
   const docRef        = useRef(doc)
@@ -472,6 +477,27 @@ export function useTabEditor(): TabEditorState & TabEditorActions {
     setSelectedTechniques((prev) => prev.includes(t) ? prev.filter((x) => x !== t) : [...prev, t])
   }, [])
 
+  const saveToSupabase = useCallback(async (userId: string) => {
+    setIsSaving(true)
+    try {
+      await saveRiff(docRef.current, userId)
+    } finally {
+      setIsSaving(false)
+    }
+  }, [])
+
+  const loadFromSupabase = useCallback(async (riffId: string) => {
+    const loaded = await loadRiff(riffId)
+    if (!loaded) return
+    try { localStorage.removeItem(DRAFT_KEY) } catch { /* ignore */ }
+    setDoc(loaded)
+    setCursor({ barIndex: 0, string: 1, beatPosition: 0 })
+    setHistory([])
+    setSelection(null)
+    setClipboard(null)
+    setSavedAt(null)
+  }, [])
+
   const clearDraft = useCallback(() => {
     try { localStorage.removeItem(DRAFT_KEY) } catch { /* ignore */ }
     const newDoc = createEmptyDocument('guitar')
@@ -486,12 +512,13 @@ export function useTabEditor(): TabEditorState & TabEditorActions {
   return {
     doc, cursor, selectedDuration, selectedDynamic, selectedTechniques,
     historyLength: history.length, canUndo: history.length > 0,
-    selection, clipboard, savedAt,
+    selection, clipboard, savedAt, isSaving,
     setCursor, setSelectedDuration, setSelectedDynamic, toggleTechnique,
     deleteAtCursor, undo, addBarAction,
     updateTitle, updateTempo, updateKey, updateTimeSignature, updateInstrument,
     startSelection, extendSelection, clearSelection,
     copy, paste, cut, clearDraft,
+    saveToSupabase, loadFromSupabase,
     onKeyDown,
   }
 }

@@ -1,6 +1,7 @@
 import { useRef, useEffect, useState } from 'react'
 import { useTabEditor } from '@/hooks/useTabEditor'
 import { useTabPlayback } from '@/hooks/useTabPlayback'
+import { useSupabase } from '@/hooks/useSupabase'
 import { TabBar } from './TabBar'
 import { TabToolbar } from './TabToolbar'
 import { TabPlayback } from './TabPlayback'
@@ -8,8 +9,9 @@ import { TabExportModal } from './TabExportModal'
 import { TabShortcuts } from './TabShortcuts'
 
 export function TabEditor() {
-  const editor  = useTabEditor()
+  const editor   = useTabEditor()
   const playback = useTabPlayback(editor.doc)
+  const { user } = useSupabase()
   const containerRef = useRef<HTMLDivElement>(null)
   const barRefs = useRef<(HTMLDivElement | null)[]>([])
 
@@ -116,6 +118,10 @@ export function TabEditor() {
         open={showExport}
         doc={editor.doc}
         onClose={() => setShowExport(false)}
+        userId={user?.id ?? null}
+        onSave={async () => { if (user?.id) await editor.saveToSupabase(user.id) }}
+        onLoad={editor.loadFromSupabase}
+        isSaving={editor.isSaving}
       />
       <TabShortcuts
         open={showShortcuts}

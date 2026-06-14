@@ -240,14 +240,14 @@ export function TabToolbar({ editor, onOpenExport, onOpenShortcuts, onPlay, isPl
             <span className="sm:hidden">+</span>
           </button>
 
-          {/* ASCII Export */}
+          {/* Export (ASCII / WAV / Cloud) */}
           <button
-            title="Eksport ASCII TAB"
+            title="Eksport — ASCII, WAV, Chmura"
             onClick={onOpenExport}
             className={`px-2.5 ${btnBase} ${btnIdle}`}
           >
-            <span className="hidden sm:inline">📋 ASCII</span>
-            <span className="sm:hidden">📋</span>
+            <span className="hidden sm:inline">⬆ Eksport</span>
+            <span className="sm:hidden">⬆</span>
           </button>
 
           {/* Play / Stop */}
