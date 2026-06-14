@@ -1,31 +1,32 @@
 import { NavLink, Outlet, useLocation } from 'react-router-dom'
 
 const TOOLS = [
-  { to: '/tools/tuner',     label: 'Tuner',       icon: '🎵', desc: 'Chromatyczny tuner z wykrywaniem dźwięku' },
-  { to: '/tools/metronome', label: 'Metronom',     icon: '🥁', desc: 'Wizualny i audio klik' },
-  { to: '/tools/tab',       label: 'Edytor TAB',  icon: '🎸', desc: 'Edytor tabulatury gitarowej z klawiaturą' },
+  { to: '/tools/tuner',      label: 'Tuner',       icon: '🎵', desc: 'Chromatyczny tuner z wykrywaniem dźwięku' },
+  { to: '/tools/metronome',  label: 'Metronom',     icon: '🥁', desc: 'Wizualny i audio klik' },
+  { to: '/tools/tab',        label: 'Edytor TAB',  icon: '🎸', desc: 'Edytor tabulatury gitarowej z klawiaturą' },
+  { to: '/tools/tap-tempo',  label: 'Tap Tempo',   icon: '👆', desc: 'Mierz BPM tapnięciami' },
+  { to: '/tools/setlista',   label: 'Setlista',    icon: '📋', desc: 'Lista piosenek na próbę' },
 ]
 
 export function ToolsPage() {
-  const location = useLocation()
-  const isRoot    = location.pathname === '/tools'
-  const isTabEditor = location.pathname.startsWith('/tools/tab')
+  const location     = useLocation()
+  const isRoot       = location.pathname === '/tools'
+  const isTabEditor  = location.pathname.startsWith('/tools/tab')
 
   return (
-    // TAB editor needs full width — remove max-w-lg constraint for it
     <div className={`px-4 py-6 ${isTabEditor ? 'max-w-6xl' : 'max-w-lg'} mx-auto`}>
       <div className="mb-6">
         <h1 className="text-2xl font-bold text-white mb-1">Narzędzia</h1>
       </div>
 
       {/* Sub-nav */}
-      <div className="flex gap-2 mb-6">
+      <div className="flex gap-1.5 mb-6 overflow-x-auto pb-1">
         {TOOLS.map(({ to, label, icon }) => (
           <NavLink
             key={to}
             to={to}
             className={({ isActive }) =>
-              `flex-1 flex items-center justify-center gap-2 py-2 rounded-xl text-sm font-semibold transition-colors ${
+              `shrink-0 flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl text-sm font-semibold transition-colors ${
                 isActive
                   ? 'bg-brand-700 text-white'
                   : 'bg-slate-800 text-slate-400 hover:bg-slate-700'

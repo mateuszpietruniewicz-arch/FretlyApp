@@ -9,6 +9,8 @@ import { ToolsPage } from '@/pages/Tools'
 import { TunerPage } from '@/pages/TunerPage'
 import { MetronomePage } from '@/pages/MetronomePage'
 import { TabEditorPage } from '@/pages/TabEditorPage'
+import { TapTempo } from '@/components/tools/TapTempo'
+import { Setlista } from '@/components/tools/Setlista'
 import { TheoryPage } from '@/pages/Theory'
 import { ProfilePage } from '@/pages/Profile'
 import { useAppStore } from '@/store'
@@ -31,7 +33,9 @@ export default function App() {
           <Route path="/tools" element={<ToolsPage />}>
             <Route path="tuner" element={<TunerPage />} />
             <Route path="metronome" element={<MetronomePage />} />
-            <Route path="tab" element={<TabEditorPage />} />
+            <Route path="tab"       element={<TabEditorPage />} />
+            <Route path="tap-tempo" element={<TapTempo />} />
+            <Route path="setlista"  element={<Setlista />} />
           </Route>
           <Route path="/theory" element={<TheoryPage />} />
           <Route path="/profile" element={<ProfilePage />} />
