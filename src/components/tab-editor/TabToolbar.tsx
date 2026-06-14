@@ -51,11 +51,14 @@ interface Props {
   editor: TabEditorState & TabEditorActions
   onOpenExport: () => void
   onOpenShortcuts: () => void
+  onPlay: () => void
+  isPlaying: boolean
+  isPlaybackLoading: boolean
 }
 
 // ─── Component ────────────────────────────────────────────────────────────────
 
-export function TabToolbar({ editor, onOpenExport, onOpenShortcuts }: Props) {
+export function TabToolbar({ editor, onOpenExport, onOpenShortcuts, onPlay, isPlaying, isPlaybackLoading }: Props) {
   function handleNewDoc() {
     if (window.confirm('Nowy dokument — niezapisane zmiany zostaną utracone?')) {
       editor.clearDraft()
@@ -247,13 +250,18 @@ export function TabToolbar({ editor, onOpenExport, onOpenShortcuts }: Props) {
             <span className="sm:hidden">📋</span>
           </button>
 
-          {/* Play placeholder */}
+          {/* Play / Stop */}
           <button
-            title="Odtwarzanie (dostępne w 7C)"
-            disabled
-            className={`px-2.5 ${btnBase} bg-indigo-600/20 text-indigo-400/50 border-indigo-500/20 cursor-not-allowed`}
+            title={isPlaying ? 'Stop' : 'Odtwórz'}
+            onClick={onPlay}
+            disabled={isPlaybackLoading}
+            className={`px-2.5 ${btnBase} disabled:opacity-40 disabled:cursor-not-allowed ${
+              isPlaying
+                ? 'bg-rose-600 text-white border-rose-600 hover:bg-rose-500'
+                : 'bg-emerald-600 text-white border-emerald-600 hover:bg-emerald-500'
+            }`}
           >
-            ▶
+            {isPlaying ? '⏹' : '▶'}
           </button>
 
           {/* Shortcuts help */}

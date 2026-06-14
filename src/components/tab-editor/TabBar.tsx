@@ -16,6 +16,7 @@ interface Props {
   cursor: TabCursor
   instrument: 'guitar' | 'bass'
   selection: TabSelection | null
+  playbackBeat: number | null
   onCursorChange: (c: TabCursor) => void
 }
 
@@ -31,15 +32,16 @@ function buildNoteGrid(bar: TabBarType, nStrings: number, nCols: number): Record
   return grid
 }
 
-export function TabBar({ bar, barIndex, cursor, instrument, selection, onCursorChange }: Props) {
+export function TabBar({ bar, barIndex, cursor, instrument, selection, playbackBeat, onCursorChange }: Props) {
   const nStrings   = getStringCount(instrument)
   const stringNames = getStringNames(instrument)
   const bpb        = BEATS_PER_BAR[bar.timeSignature]
   const nCols      = Math.round(bpb / GRID_RES)
   const noteGrid   = buildNoteGrid(bar, nStrings, nCols)
 
-  const isCursorBar = cursor.barIndex === barIndex
-  const cursorCol   = isCursorBar ? Math.round(cursor.beatPosition / GRID_RES) : -1
+  const isCursorBar  = cursor.barIndex === barIndex
+  const cursorCol    = isCursorBar ? Math.round(cursor.beatPosition / GRID_RES) : -1
+  const playbackCol  = playbackBeat !== null ? Math.min(Math.round(playbackBeat / GRID_RES), nCols - 1) : -1
 
   const totalW = LABEL_W + nCols * COL_W + BARLINE_W
   const totalH = HEADER_H + nStrings * ROW_H
@@ -77,6 +79,21 @@ export function TabBar({ bar, barIndex, cursor, instrument, selection, onCursorC
             width: COL_W,
             height: ROW_H,
             backgroundColor: 'rgba(99, 102, 241, 0.4)',
+          }}
+        />
+      )}
+
+      {/* Playback cursor column (green) */}
+      {playbackCol >= 0 && playbackCol < nCols && (
+        <div
+          className="absolute z-30 pointer-events-none rounded-sm"
+          style={{
+            left: LABEL_W + playbackCol * COL_W,
+            top:  HEADER_H,
+            width: COL_W,
+            height: nStrings * ROW_H,
+            backgroundColor: 'rgba(16, 185, 129, 0.25)',
+            borderLeft: '2px solid rgba(16, 185, 129, 0.7)',
           }}
         />
       )}

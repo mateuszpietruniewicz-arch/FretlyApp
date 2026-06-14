@@ -1,19 +1,30 @@
 import { useRef, useEffect, useState } from 'react'
 import { useTabEditor } from '@/hooks/useTabEditor'
+import { useTabPlayback } from '@/hooks/useTabPlayback'
 import { TabBar } from './TabBar'
 import { TabToolbar } from './TabToolbar'
+import { TabPlayback } from './TabPlayback'
 import { TabExportModal } from './TabExportModal'
 import { TabShortcuts } from './TabShortcuts'
 
 export function TabEditor() {
-  const editor = useTabEditor()
+  const editor  = useTabEditor()
+  const playback = useTabPlayback(editor.doc)
   const containerRef = useRef<HTMLDivElement>(null)
+  const barRefs = useRef<(HTMLDivElement | null)[]>([])
 
   const [showExport,    setShowExport]    = useState(false)
   const [showShortcuts, setShowShortcuts] = useState(false)
 
   // Auto-focus editor on mount so keyboard works immediately
   useEffect(() => { containerRef.current?.focus() }, [])
+
+  // Auto-scroll to active playback bar
+  useEffect(() => {
+    if (playback.playbackCursor === null) return
+    const el = barRefs.current[playback.playbackCursor.barIndex]
+    el?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' })
+  }, [playback.playbackCursor?.barIndex])
 
   return (
     <>
@@ -36,7 +47,13 @@ export function TabEditor() {
           editor={editor}
           onOpenExport={() => setShowExport(true)}
           onOpenShortcuts={() => setShowShortcuts(true)}
+          onPlay={playback.play}
+          isPlaying={playback.isPlaying}
+          isPlaybackLoading={playback.isLoading}
         />
+
+        {/* Playback controls */}
+        <TabPlayback playback={playback} />
 
         {/* Status bar */}
         <div className="flex items-center gap-4 text-[11px] text-muted font-mono px-1">
@@ -66,15 +83,24 @@ export function TabEditor() {
         <div className="overflow-x-auto overflow-y-hidden rounded-xl border border-border dark:border-slate-700 bg-slate-950/30 dark:bg-slate-900/50 p-4">
           <div className="flex gap-0 min-w-max">
             {editor.doc.bars.map((bar, i) => (
-              <TabBar
+              <div
                 key={bar.id}
-                bar={bar}
-                barIndex={i}
-                cursor={editor.cursor}
-                instrument={editor.doc.instrument}
-                selection={editor.selection}
-                onCursorChange={editor.setCursor}
-              />
+                ref={(el) => { barRefs.current[i] = el }}
+              >
+                <TabBar
+                  bar={bar}
+                  barIndex={i}
+                  cursor={editor.cursor}
+                  instrument={editor.doc.instrument}
+                  selection={editor.selection}
+                  playbackBeat={
+                    playback.playbackCursor?.barIndex === i
+                      ? playback.playbackCursor.beatPosition
+                      : null
+                  }
+                  onCursorChange={editor.setCursor}
+                />
+              </div>
             ))}
           </div>
         </div>
