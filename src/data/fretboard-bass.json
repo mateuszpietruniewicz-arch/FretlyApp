@@ -1,0 +1,1312 @@
+{
+  "tuning": "EADG",
+  "frets": 24,
+  "strings": [
+    {
+      "string": 1,
+      "openNote": "G2",
+      "frets": [
+        {
+          "fret": 0,
+          "midi": 43,
+          "note": "G2",
+          "pc": "G",
+          "octave": 2,
+          "freq": 98
+        },
+        {
+          "fret": 1,
+          "midi": 44,
+          "note": "Ab2",
+          "pc": "Ab",
+          "octave": 2,
+          "freq": 103.83
+        },
+        {
+          "fret": 2,
+          "midi": 45,
+          "note": "A2",
+          "pc": "A",
+          "octave": 2,
+          "freq": 110
+        },
+        {
+          "fret": 3,
+          "midi": 46,
+          "note": "Bb2",
+          "pc": "Bb",
+          "octave": 2,
+          "freq": 116.54
+        },
+        {
+          "fret": 4,
+          "midi": 47,
+          "note": "B2",
+          "pc": "B",
+          "octave": 2,
+          "freq": 123.47
+        },
+        {
+          "fret": 5,
+          "midi": 48,
+          "note": "C3",
+          "pc": "C",
+          "octave": 3,
+          "freq": 130.81
+        },
+        {
+          "fret": 6,
+          "midi": 49,
+          "note": "Db3",
+          "pc": "Db",
+          "octave": 3,
+          "freq": 138.59
+        },
+        {
+          "fret": 7,
+          "midi": 50,
+          "note": "D3",
+          "pc": "D",
+          "octave": 3,
+          "freq": 146.83
+        },
+        {
+          "fret": 8,
+          "midi": 51,
+          "note": "Eb3",
+          "pc": "Eb",
+          "octave": 3,
+          "freq": 155.56
+        },
+        {
+          "fret": 9,
+          "midi": 52,
+          "note": "E3",
+          "pc": "E",
+          "octave": 3,
+          "freq": 164.81
+        },
+        {
+          "fret": 10,
+          "midi": 53,
+          "note": "F3",
+          "pc": "F",
+          "octave": 3,
+          "freq": 174.61
+        },
+        {
+          "fret": 11,
+          "midi": 54,
+          "note": "Gb3",
+          "pc": "Gb",
+          "octave": 3,
+          "freq": 185
+        },
+        {
+          "fret": 12,
+          "midi": 55,
+          "note": "G3",
+          "pc": "G",
+          "octave": 3,
+          "freq": 196
+        },
+        {
+          "fret": 13,
+          "midi": 56,
+          "note": "Ab3",
+          "pc": "Ab",
+          "octave": 3,
+          "freq": 207.65
+        },
+        {
+          "fret": 14,
+          "midi": 57,
+          "note": "A3",
+          "pc": "A",
+          "octave": 3,
+          "freq": 220
+        },
+        {
+          "fret": 15,
+          "midi": 58,
+          "note": "Bb3",
+          "pc": "Bb",
+          "octave": 3,
+          "freq": 233.08
+        },
+        {
+          "fret": 16,
+          "midi": 59,
+          "note": "B3",
+          "pc": "B",
+          "octave": 3,
+          "freq": 246.94
+        },
+        {
+          "fret": 17,
+          "midi": 60,
+          "note": "C4",
+          "pc": "C",
+          "octave": 4,
+          "freq": 261.63
+        },
+        {
+          "fret": 18,
+          "midi": 61,
+          "note": "Db4",
+          "pc": "Db",
+          "octave": 4,
+          "freq": 277.18
+        },
+        {
+          "fret": 19,
+          "midi": 62,
+          "note": "D4",
+          "pc": "D",
+          "octave": 4,
+          "freq": 293.66
+        },
+        {
+          "fret": 20,
+          "midi": 63,
+          "note": "Eb4",
+          "pc": "Eb",
+          "octave": 4,
+          "freq": 311.13
+        },
+        {
+          "fret": 21,
+          "midi": 64,
+          "note": "E4",
+          "pc": "E",
+          "octave": 4,
+          "freq": 329.63
+        },
+        {
+          "fret": 22,
+          "midi": 65,
+          "note": "F4",
+          "pc": "F",
+          "octave": 4,
+          "freq": 349.23
+        },
+        {
+          "fret": 23,
+          "midi": 66,
+          "note": "Gb4",
+          "pc": "Gb",
+          "octave": 4,
+          "freq": 369.99
+        },
+        {
+          "fret": 24,
+          "midi": 67,
+          "note": "G4",
+          "pc": "G",
+          "octave": 4,
+          "freq": 392
+        }
+      ]
+    },
+    {
+      "string": 2,
+      "openNote": "D2",
+      "frets": [
+        {
+          "fret": 0,
+          "midi": 38,
+          "note": "D2",
+          "pc": "D",
+          "octave": 2,
+          "freq": 73.42
+        },
+        {
+          "fret": 1,
+          "midi": 39,
+          "note": "Eb2",
+          "pc": "Eb",
+          "octave": 2,
+          "freq": 77.78
+        },
+        {
+          "fret": 2,
+          "midi": 40,
+          "note": "E2",
+          "pc": "E",
+          "octave": 2,
+          "freq": 82.41
+        },
+        {
+          "fret": 3,
+          "midi": 41,
+          "note": "F2",
+          "pc": "F",
+          "octave": 2,
+          "freq": 87.31
+        },
+        {
+          "fret": 4,
+          "midi": 42,
+          "note": "Gb2",
+          "pc": "Gb",
+          "octave": 2,
+          "freq": 92.5
+        },
+        {
+          "fret": 5,
+          "midi": 43,
+          "note": "G2",
+          "pc": "G",
+          "octave": 2,
+          "freq": 98
+        },
+        {
+          "fret": 6,
+          "midi": 44,
+          "note": "Ab2",
+          "pc": "Ab",
+          "octave": 2,
+          "freq": 103.83
+        },
+        {
+          "fret": 7,
+          "midi": 45,
+          "note": "A2",
+          "pc": "A",
+          "octave": 2,
+          "freq": 110
+        },
+        {
+          "fret": 8,
+          "midi": 46,
+          "note": "Bb2",
+          "pc": "Bb",
+          "octave": 2,
+          "freq": 116.54
+        },
+        {
+          "fret": 9,
+          "midi": 47,
+          "note": "B2",
+          "pc": "B",
+          "octave": 2,
+          "freq": 123.47
+        },
+        {
+          "fret": 10,
+          "midi": 48,
+          "note": "C3",
+          "pc": "C",
+          "octave": 3,
+          "freq": 130.81
+        },
+        {
+          "fret": 11,
+          "midi": 49,
+          "note": "Db3",
+          "pc": "Db",
+          "octave": 3,
+          "freq": 138.59
+        },
+        {
+          "fret": 12,
+          "midi": 50,
+          "note": "D3",
+          "pc": "D",
+          "octave": 3,
+          "freq": 146.83
+        },
+        {
+          "fret": 13,
+          "midi": 51,
+          "note": "Eb3",
+          "pc": "Eb",
+          "octave": 3,
+          "freq": 155.56
+        },
+        {
+          "fret": 14,
+          "midi": 52,
+          "note": "E3",
+          "pc": "E",
+          "octave": 3,
+          "freq": 164.81
+        },
+        {
+          "fret": 15,
+          "midi": 53,
+          "note": "F3",
+          "pc": "F",
+          "octave": 3,
+          "freq": 174.61
+        },
+        {
+          "fret": 16,
+          "midi": 54,
+          "note": "Gb3",
+          "pc": "Gb",
+          "octave": 3,
+          "freq": 185
+        },
+        {
+          "fret": 17,
+          "midi": 55,
+          "note": "G3",
+          "pc": "G",
+          "octave": 3,
+          "freq": 196
+        },
+        {
+          "fret": 18,
+          "midi": 56,
+          "note": "Ab3",
+          "pc": "Ab",
+          "octave": 3,
+          "freq": 207.65
+        },
+        {
+          "fret": 19,
+          "midi": 57,
+          "note": "A3",
+          "pc": "A",
+          "octave": 3,
+          "freq": 220
+        },
+        {
+          "fret": 20,
+          "midi": 58,
+          "note": "Bb3",
+          "pc": "Bb",
+          "octave": 3,
+          "freq": 233.08
+        },
+        {
+          "fret": 21,
+          "midi": 59,
+          "note": "B3",
+          "pc": "B",
+          "octave": 3,
+          "freq": 246.94
+        },
+        {
+          "fret": 22,
+          "midi": 60,
+          "note": "C4",
+          "pc": "C",
+          "octave": 4,
+          "freq": 261.63
+        },
+        {
+          "fret": 23,
+          "midi": 61,
+          "note": "Db4",
+          "pc": "Db",
+          "octave": 4,
+          "freq": 277.18
+        },
+        {
+          "fret": 24,
+          "midi": 62,
+          "note": "D4",
+          "pc": "D",
+          "octave": 4,
+          "freq": 293.66
+        }
+      ]
+    },
+    {
+      "string": 3,
+      "openNote": "A1",
+      "frets": [
+        {
+          "fret": 0,
+          "midi": 33,
+          "note": "A1",
+          "pc": "A",
+          "octave": 1,
+          "freq": 55
+        },
+        {
+          "fret": 1,
+          "midi": 34,
+          "note": "Bb1",
+          "pc": "Bb",
+          "octave": 1,
+          "freq": 58.27
+        },
+        {
+          "fret": 2,
+          "midi": 35,
+          "note": "B1",
+          "pc": "B",
+          "octave": 1,
+          "freq": 61.74
+        },
+        {
+          "fret": 3,
+          "midi": 36,
+          "note": "C2",
+          "pc": "C",
+          "octave": 2,
+          "freq": 65.41
+        },
+        {
+          "fret": 4,
+          "midi": 37,
+          "note": "Db2",
+          "pc": "Db",
+          "octave": 2,
+          "freq": 69.3
+        },
+        {
+          "fret": 5,
+          "midi": 38,
+          "note": "D2",
+          "pc": "D",
+          "octave": 2,
+          "freq": 73.42
+        },
+        {
+          "fret": 6,
+          "midi": 39,
+          "note": "Eb2",
+          "pc": "Eb",
+          "octave": 2,
+          "freq": 77.78
+        },
+        {
+          "fret": 7,
+          "midi": 40,
+          "note": "E2",
+          "pc": "E",
+          "octave": 2,
+          "freq": 82.41
+        },
+        {
+          "fret": 8,
+          "midi": 41,
+          "note": "F2",
+          "pc": "F",
+          "octave": 2,
+          "freq": 87.31
+        },
+        {
+          "fret": 9,
+          "midi": 42,
+          "note": "Gb2",
+          "pc": "Gb",
+          "octave": 2,
+          "freq": 92.5
+        },
+        {
+          "fret": 10,
+          "midi": 43,
+          "note": "G2",
+          "pc": "G",
+          "octave": 2,
+          "freq": 98
+        },
+        {
+          "fret": 11,
+          "midi": 44,
+          "note": "Ab2",
+          "pc": "Ab",
+          "octave": 2,
+          "freq": 103.83
+        },
+        {
+          "fret": 12,
+          "midi": 45,
+          "note": "A2",
+          "pc": "A",
+          "octave": 2,
+          "freq": 110
+        },
+        {
+          "fret": 13,
+          "midi": 46,
+          "note": "Bb2",
+          "pc": "Bb",
+          "octave": 2,
+          "freq": 116.54
+        },
+        {
+          "fret": 14,
+          "midi": 47,
+          "note": "B2",
+          "pc": "B",
+          "octave": 2,
+          "freq": 123.47
+        },
+        {
+          "fret": 15,
+          "midi": 48,
+          "note": "C3",
+          "pc": "C",
+          "octave": 3,
+          "freq": 130.81
+        },
+        {
+          "fret": 16,
+          "midi": 49,
+          "note": "Db3",
+          "pc": "Db",
+          "octave": 3,
+          "freq": 138.59
+        },
+        {
+          "fret": 17,
+          "midi": 50,
+          "note": "D3",
+          "pc": "D",
+          "octave": 3,
+          "freq": 146.83
+        },
+        {
+          "fret": 18,
+          "midi": 51,
+          "note": "Eb3",
+          "pc": "Eb",
+          "octave": 3,
+          "freq": 155.56
+        },
+        {
+          "fret": 19,
+          "midi": 52,
+          "note": "E3",
+          "pc": "E",
+          "octave": 3,
+          "freq": 164.81
+        },
+        {
+          "fret": 20,
+          "midi": 53,
+          "note": "F3",
+          "pc": "F",
+          "octave": 3,
+          "freq": 174.61
+        },
+        {
+          "fret": 21,
+          "midi": 54,
+          "note": "Gb3",
+          "pc": "Gb",
+          "octave": 3,
+          "freq": 185
+        },
+        {
+          "fret": 22,
+          "midi": 55,
+          "note": "G3",
+          "pc": "G",
+          "octave": 3,
+          "freq": 196
+        },
+        {
+          "fret": 23,
+          "midi": 56,
+          "note": "Ab3",
+          "pc": "Ab",
+          "octave": 3,
+          "freq": 207.65
+        },
+        {
+          "fret": 24,
+          "midi": 57,
+          "note": "A3",
+          "pc": "A",
+          "octave": 3,
+          "freq": 220
+        }
+      ]
+    },
+    {
+      "string": 4,
+      "openNote": "E1",
+      "frets": [
+        {
+          "fret": 0,
+          "midi": 28,
+          "note": "E1",
+          "pc": "E",
+          "octave": 1,
+          "freq": 41.2
+        },
+        {
+          "fret": 1,
+          "midi": 29,
+          "note": "F1",
+          "pc": "F",
+          "octave": 1,
+          "freq": 43.65
+        },
+        {
+          "fret": 2,
+          "midi": 30,
+          "note": "Gb1",
+          "pc": "Gb",
+          "octave": 1,
+          "freq": 46.25
+        },
+        {
+          "fret": 3,
+          "midi": 31,
+          "note": "G1",
+          "pc": "G",
+          "octave": 1,
+          "freq": 49
+        },
+        {
+          "fret": 4,
+          "midi": 32,
+          "note": "Ab1",
+          "pc": "Ab",
+          "octave": 1,
+          "freq": 51.91
+        },
+        {
+          "fret": 5,
+          "midi": 33,
+          "note": "A1",
+          "pc": "A",
+          "octave": 1,
+          "freq": 55
+        },
+        {
+          "fret": 6,
+          "midi": 34,
+          "note": "Bb1",
+          "pc": "Bb",
+          "octave": 1,
+          "freq": 58.27
+        },
+        {
+          "fret": 7,
+          "midi": 35,
+          "note": "B1",
+          "pc": "B",
+          "octave": 1,
+          "freq": 61.74
+        },
+        {
+          "fret": 8,
+          "midi": 36,
+          "note": "C2",
+          "pc": "C",
+          "octave": 2,
+          "freq": 65.41
+        },
+        {
+          "fret": 9,
+          "midi": 37,
+          "note": "Db2",
+          "pc": "Db",
+          "octave": 2,
+          "freq": 69.3
+        },
+        {
+          "fret": 10,
+          "midi": 38,
+          "note": "D2",
+          "pc": "D",
+          "octave": 2,
+          "freq": 73.42
+        },
+        {
+          "fret": 11,
+          "midi": 39,
+          "note": "Eb2",
+          "pc": "Eb",
+          "octave": 2,
+          "freq": 77.78
+        },
+        {
+          "fret": 12,
+          "midi": 40,
+          "note": "E2",
+          "pc": "E",
+          "octave": 2,
+          "freq": 82.41
+        },
+        {
+          "fret": 13,
+          "midi": 41,
+          "note": "F2",
+          "pc": "F",
+          "octave": 2,
+          "freq": 87.31
+        },
+        {
+          "fret": 14,
+          "midi": 42,
+          "note": "Gb2",
+          "pc": "Gb",
+          "octave": 2,
+          "freq": 92.5
+        },
+        {
+          "fret": 15,
+          "midi": 43,
+          "note": "G2",
+          "pc": "G",
+          "octave": 2,
+          "freq": 98
+        },
+        {
+          "fret": 16,
+          "midi": 44,
+          "note": "Ab2",
+          "pc": "Ab",
+          "octave": 2,
+          "freq": 103.83
+        },
+        {
+          "fret": 17,
+          "midi": 45,
+          "note": "A2",
+          "pc": "A",
+          "octave": 2,
+          "freq": 110
+        },
+        {
+          "fret": 18,
+          "midi": 46,
+          "note": "Bb2",
+          "pc": "Bb",
+          "octave": 2,
+          "freq": 116.54
+        },
+        {
+          "fret": 19,
+          "midi": 47,
+          "note": "B2",
+          "pc": "B",
+          "octave": 2,
+          "freq": 123.47
+        },
+        {
+          "fret": 20,
+          "midi": 48,
+          "note": "C3",
+          "pc": "C",
+          "octave": 3,
+          "freq": 130.81
+        },
+        {
+          "fret": 21,
+          "midi": 49,
+          "note": "Db3",
+          "pc": "Db",
+          "octave": 3,
+          "freq": 138.59
+        },
+        {
+          "fret": 22,
+          "midi": 50,
+          "note": "D3",
+          "pc": "D",
+          "octave": 3,
+          "freq": 146.83
+        },
+        {
+          "fret": 23,
+          "midi": 51,
+          "note": "Eb3",
+          "pc": "Eb",
+          "octave": 3,
+          "freq": 155.56
+        },
+        {
+          "fret": 24,
+          "midi": 52,
+          "note": "E3",
+          "pc": "E",
+          "octave": 3,
+          "freq": 164.81
+        }
+      ]
+    }
+  ],
+  "positions": {
+    "G2": [
+      {
+        "string": 1,
+        "fret": 0
+      },
+      {
+        "string": 2,
+        "fret": 5
+      },
+      {
+        "string": 3,
+        "fret": 10
+      },
+      {
+        "string": 4,
+        "fret": 15
+      }
+    ],
+    "Ab2": [
+      {
+        "string": 1,
+        "fret": 1
+      },
+      {
+        "string": 2,
+        "fret": 6
+      },
+      {
+        "string": 3,
+        "fret": 11
+      },
+      {
+        "string": 4,
+        "fret": 16
+      }
+    ],
+    "A2": [
+      {
+        "string": 1,
+        "fret": 2
+      },
+      {
+        "string": 2,
+        "fret": 7
+      },
+      {
+        "string": 3,
+        "fret": 12
+      },
+      {
+        "string": 4,
+        "fret": 17
+      }
+    ],
+    "Bb2": [
+      {
+        "string": 1,
+        "fret": 3
+      },
+      {
+        "string": 2,
+        "fret": 8
+      },
+      {
+        "string": 3,
+        "fret": 13
+      },
+      {
+        "string": 4,
+        "fret": 18
+      }
+    ],
+    "B2": [
+      {
+        "string": 1,
+        "fret": 4
+      },
+      {
+        "string": 2,
+        "fret": 9
+      },
+      {
+        "string": 3,
+        "fret": 14
+      },
+      {
+        "string": 4,
+        "fret": 19
+      }
+    ],
+    "C3": [
+      {
+        "string": 1,
+        "fret": 5
+      },
+      {
+        "string": 2,
+        "fret": 10
+      },
+      {
+        "string": 3,
+        "fret": 15
+      },
+      {
+        "string": 4,
+        "fret": 20
+      }
+    ],
+    "Db3": [
+      {
+        "string": 1,
+        "fret": 6
+      },
+      {
+        "string": 2,
+        "fret": 11
+      },
+      {
+        "string": 3,
+        "fret": 16
+      },
+      {
+        "string": 4,
+        "fret": 21
+      }
+    ],
+    "D3": [
+      {
+        "string": 1,
+        "fret": 7
+      },
+      {
+        "string": 2,
+        "fret": 12
+      },
+      {
+        "string": 3,
+        "fret": 17
+      },
+      {
+        "string": 4,
+        "fret": 22
+      }
+    ],
+    "Eb3": [
+      {
+        "string": 1,
+        "fret": 8
+      },
+      {
+        "string": 2,
+        "fret": 13
+      },
+      {
+        "string": 3,
+        "fret": 18
+      },
+      {
+        "string": 4,
+        "fret": 23
+      }
+    ],
+    "E3": [
+      {
+        "string": 1,
+        "fret": 9
+      },
+      {
+        "string": 2,
+        "fret": 14
+      },
+      {
+        "string": 3,
+        "fret": 19
+      },
+      {
+        "string": 4,
+        "fret": 24
+      }
+    ],
+    "F3": [
+      {
+        "string": 1,
+        "fret": 10
+      },
+      {
+        "string": 2,
+        "fret": 15
+      },
+      {
+        "string": 3,
+        "fret": 20
+      }
+    ],
+    "Gb3": [
+      {
+        "string": 1,
+        "fret": 11
+      },
+      {
+        "string": 2,
+        "fret": 16
+      },
+      {
+        "string": 3,
+        "fret": 21
+      }
+    ],
+    "G3": [
+      {
+        "string": 1,
+        "fret": 12
+      },
+      {
+        "string": 2,
+        "fret": 17
+      },
+      {
+        "string": 3,
+        "fret": 22
+      }
+    ],
+    "Ab3": [
+      {
+        "string": 1,
+        "fret": 13
+      },
+      {
+        "string": 2,
+        "fret": 18
+      },
+      {
+        "string": 3,
+        "fret": 23
+      }
+    ],
+    "A3": [
+      {
+        "string": 1,
+        "fret": 14
+      },
+      {
+        "string": 2,
+        "fret": 19
+      },
+      {
+        "string": 3,
+        "fret": 24
+      }
+    ],
+    "Bb3": [
+      {
+        "string": 1,
+        "fret": 15
+      },
+      {
+        "string": 2,
+        "fret": 20
+      }
+    ],
+    "B3": [
+      {
+        "string": 1,
+        "fret": 16
+      },
+      {
+        "string": 2,
+        "fret": 21
+      }
+    ],
+    "C4": [
+      {
+        "string": 1,
+        "fret": 17
+      },
+      {
+        "string": 2,
+        "fret": 22
+      }
+    ],
+    "Db4": [
+      {
+        "string": 1,
+        "fret": 18
+      },
+      {
+        "string": 2,
+        "fret": 23
+      }
+    ],
+    "D4": [
+      {
+        "string": 1,
+        "fret": 19
+      },
+      {
+        "string": 2,
+        "fret": 24
+      }
+    ],
+    "Eb4": [
+      {
+        "string": 1,
+        "fret": 20
+      }
+    ],
+    "E4": [
+      {
+        "string": 1,
+        "fret": 21
+      }
+    ],
+    "F4": [
+      {
+        "string": 1,
+        "fret": 22
+      }
+    ],
+    "Gb4": [
+      {
+        "string": 1,
+        "fret": 23
+      }
+    ],
+    "G4": [
+      {
+        "string": 1,
+        "fret": 24
+      }
+    ],
+    "D2": [
+      {
+        "string": 2,
+        "fret": 0
+      },
+      {
+        "string": 3,
+        "fret": 5
+      },
+      {
+        "string": 4,
+        "fret": 10
+      }
+    ],
+    "Eb2": [
+      {
+        "string": 2,
+        "fret": 1
+      },
+      {
+        "string": 3,
+        "fret": 6
+      },
+      {
+        "string": 4,
+        "fret": 11
+      }
+    ],
+    "E2": [
+      {
+        "string": 2,
+        "fret": 2
+      },
+      {
+        "string": 3,
+        "fret": 7
+      },
+      {
+        "string": 4,
+        "fret": 12
+      }
+    ],
+    "F2": [
+      {
+        "string": 2,
+        "fret": 3
+      },
+      {
+        "string": 3,
+        "fret": 8
+      },
+      {
+        "string": 4,
+        "fret": 13
+      }
+    ],
+    "Gb2": [
+      {
+        "string": 2,
+        "fret": 4
+      },
+      {
+        "string": 3,
+        "fret": 9
+      },
+      {
+        "string": 4,
+        "fret": 14
+      }
+    ],
+    "A1": [
+      {
+        "string": 3,
+        "fret": 0
+      },
+      {
+        "string": 4,
+        "fret": 5
+      }
+    ],
+    "Bb1": [
+      {
+        "string": 3,
+        "fret": 1
+      },
+      {
+        "string": 4,
+        "fret": 6
+      }
+    ],
+    "B1": [
+      {
+        "string": 3,
+        "fret": 2
+      },
+      {
+        "string": 4,
+        "fret": 7
+      }
+    ],
+    "C2": [
+      {
+        "string": 3,
+        "fret": 3
+      },
+      {
+        "string": 4,
+        "fret": 8
+      }
+    ],
+    "Db2": [
+      {
+        "string": 3,
+        "fret": 4
+      },
+      {
+        "string": 4,
+        "fret": 9
+      }
+    ],
+    "E1": [
+      {
+        "string": 4,
+        "fret": 0
+      }
+    ],
+    "F1": [
+      {
+        "string": 4,
+        "fret": 1
+      }
+    ],
+    "Gb1": [
+      {
+        "string": 4,
+        "fret": 2
+      }
+    ],
+    "G1": [
+      {
+        "string": 4,
+        "fret": 3
+      }
+    ],
+    "Ab1": [
+      {
+        "string": 4,
+        "fret": 4
+      }
+    ]
+  }
+}

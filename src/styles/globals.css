@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand (purple) */
+  --color-brand-50: #faf5ff;
+  --color-brand-100: #f3e8ff;
+  --color-brand-200: #e9d5ff;
+  --color-brand-300: #d8b4fe;
+  --color-brand-400: #c084fc;
+  --color-brand-500: #a855f7;
+  --color-brand-600: #9333ea;
+  --color-brand-700: #7e22ce;
+  --color-brand-800: #6b21a8;
+  --color-brand-900: #581c87;
+
+  /* 12-note color system (CONTEXT_2.md) — spójny przez całą aplikację */
+  --color-note-C:  #ef4444;
+  --color-note-Cs: #fb923c;
+  --color-note-D:  #f97316;
+  --color-note-Ds: #eab308;
+  --color-note-E:  #22c55e;
+  --color-note-F:  #14b8a6;
+  --color-note-Fs: #3b82f6;
+  --color-note-G:  #1e40af;
+  --color-note-Gs: #a855f7;
+  --color-note-A:  #ec4899;
+  --color-note-As: #f43f5e;
+  --color-note-B:  #9f1239;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* iOS safe area for bottom nav */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0);
+}

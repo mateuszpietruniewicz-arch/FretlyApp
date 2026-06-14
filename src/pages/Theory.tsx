@@ -1,8 +1,9 @@
 const TOPICS = [
   { icon: '🎵', title: 'Interwały', desc: 'Odległości między dźwiękami — sekunda, tercja, kwinta…' },
-  { icon: '🎼', title: 'Budowa skal', desc: 'Jak są zbudowane skale durowe, molowe i pentatoniki' },
+  { icon: '🎼', title: 'Budowa skal', desc: 'Durowe, molowe, pentatoniki — jak są zbudowane' },
   { icon: '🎸', title: 'Budowa akordów', desc: 'Trójdźwięki, septymowe, suspendowane' },
-  { icon: '🥁', title: 'Rytm i metrum', desc: 'Wartości nut, metrum 4/4, 3/4, synkopa' },
+  { icon: '🎛️', title: 'Tryby gitarowe', desc: 'Dorian, Mixolydian — te które faktycznie grasz' },
+  { icon: '🥁', title: 'Rytm i metrum', desc: 'Wartości nut, metrum 4/4, synkopa' },
 ]
 
 export function TheoryPage() {

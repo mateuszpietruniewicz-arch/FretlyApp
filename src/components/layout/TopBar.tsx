@@ -1,4 +1,4 @@
-import { useAppStore } from '@/store/appStore'
+import { useAppStore } from '@/store'
 
 export function TopBar() {
   const { theme, toggleTheme, instrument } = useAppStore()

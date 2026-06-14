@@ -1,6 +1,6 @@
+import { useAppStore } from '@/store'
 import { LEVEL_NAMES } from '@/types'
 import type { Level } from '@/types'
-import { useAppStore } from '@/store/appStore'
 
 const CATEGORIES = [
   { id: 'notes', label: 'Nuty', icon: '🎵', desc: 'Pojedyncze dźwięki i pozycje na gryfie' },
@@ -11,7 +11,7 @@ const CATEGORIES = [
 
 export function LearnPage() {
   const { stats } = useAppStore()
-  const currentLevel: Level = (stats?.current_level ?? 1) as Level
+  const currentLevel: Level = ((stats?.current_level ?? 1) as Level)
 
   return (
     <div className="px-4 py-6 max-w-lg mx-auto">
@@ -22,7 +22,7 @@ export function LearnPage() {
             Poziom {currentLevel}: {LEVEL_NAMES[currentLevel]}
           </span>
         </div>
-        <p className="text-slate-400 text-sm">Wybierz kategorię do ćwiczenia.</p>
+        <p className="text-slate-400 text-sm">Wybierz kategorię.</p>
       </div>
 
       <div className="grid gap-3">
