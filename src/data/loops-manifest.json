@@ -1,0 +1,22 @@
+[
+  { "id": "breeze-hat-main",     "filename": "drums-096-breeze-hat-main.mid",     "bpm": 96,  "style": "breeze",  "part": "hat-main",     "role": "main",   "label": "Breeze 96 — Hat Main" },
+  { "id": "breeze-hat-fill1",    "filename": "drums-096-breeze-hat-fill1.mid",    "bpm": 96,  "style": "breeze",  "part": "hat-fill1",    "role": "fill",   "label": "Breeze 96 — Hat Fill 1" },
+  { "id": "breeze-hat-fill2",    "filename": "drums-096-breeze-hat-fill2.mid",    "bpm": 96,  "style": "breeze",  "part": "hat-fill2",    "role": "fill",   "label": "Breeze 96 — Hat Fill 2" },
+  { "id": "breeze-hat-fill3",    "filename": "drums-096-breeze-hat-fill3.mid",    "bpm": 96,  "style": "breeze",  "part": "hat-fill3",    "role": "fill",   "label": "Breeze 96 — Hat Fill 3" },
+  { "id": "breeze-ride-main",    "filename": "drums-096-breeze-ride-main.mid",    "bpm": 96,  "style": "breeze",  "part": "ride-main",    "role": "main",   "label": "Breeze 96 — Ride Main" },
+  { "id": "breeze-ride-fill",    "filename": "drums-096-breeze-ride-fill.mid",    "bpm": 96,  "style": "breeze",  "part": "ride-fill",    "role": "fill",   "label": "Breeze 96 — Ride Fill" },
+  { "id": "breeze-ride-alt-main","filename": "drums-096-breeze-ride-alt-main.mid","bpm": 96,  "style": "breeze",  "part": "ride-alt-main","role": "main",   "label": "Breeze 96 — Ride Alt Main" },
+  { "id": "breeze-ride-alt-fill","filename": "drums-096-breeze-ride-alt-fill.mid","bpm": 96,  "style": "breeze",  "part": "ride-alt-fill","role": "fill",   "label": "Breeze 96 — Ride Alt Fill" },
+  { "id": "breeze-intro-fill",   "filename": "drums-096-breeze-intro-fill.mid",   "bpm": 96,  "style": "breeze",  "part": "intro-fill",   "role": "intro",  "label": "Breeze 96 — Intro Fill" },
+  { "id": "breeze-outro-fill",   "filename": "drums-096-breeze-outro-fill.mid",   "bpm": 96,  "style": "breeze",  "part": "outro-fill",   "role": "outro",  "label": "Breeze 96 — Outro Fill" },
+  { "id": "shuffle-hat-main",    "filename": "drums-130-shuffle-hat-main.mid",    "bpm": 130, "style": "shuffle", "part": "hat-main",     "role": "main",   "label": "Shuffle 130 — Hat Main" },
+  { "id": "shuffle-hat-fill1",   "filename": "drums-130-shuffle-hat-fill1.mid",   "bpm": 130, "style": "shuffle", "part": "hat-fill1",    "role": "fill",   "label": "Shuffle 130 — Hat Fill 1" },
+  { "id": "shuffle-hat-fill2",   "filename": "drums-130-shuffle-hat-fill2.mid",   "bpm": 130, "style": "shuffle", "part": "hat-fill2",    "role": "fill",   "label": "Shuffle 130 — Hat Fill 2" },
+  { "id": "shuffle-hat-fill3",   "filename": "drums-130-shuffle-hat-fill3.mid",   "bpm": 130, "style": "shuffle", "part": "hat-fill3",    "role": "fill",   "label": "Shuffle 130 — Hat Fill 3" },
+  { "id": "shuffle-ride-main",   "filename": "drums-130-shuffle-ride-main.mid",   "bpm": 130, "style": "shuffle", "part": "ride-main",    "role": "main",   "label": "Shuffle 130 — Ride Main" },
+  { "id": "shuffle-ride-fill1",  "filename": "drums-130-shuffle-ride-fill1.mid",  "bpm": 130, "style": "shuffle", "part": "ride-fill1",   "role": "fill",   "label": "Shuffle 130 — Ride Fill 1" },
+  { "id": "shuffle-ride-fill2",  "filename": "drums-130-shuffle-ride-fill2.mid",  "bpm": 130, "style": "shuffle", "part": "ride-fill2",   "role": "fill",   "label": "Shuffle 130 — Ride Fill 2" },
+  { "id": "shuffle-ride-fill3",  "filename": "drums-130-shuffle-ride-fill3.mid",  "bpm": 130, "style": "shuffle", "part": "ride-fill3",   "role": "fill",   "label": "Shuffle 130 — Ride Fill 3" },
+  { "id": "shuffle-intro-fill",  "filename": "drums-130-shuffle-intro-fill.mid",  "bpm": 130, "style": "shuffle", "part": "intro-fill",   "role": "intro",  "label": "Shuffle 130 — Intro Fill" },
+  { "id": "shuffle-ending",      "filename": "drums-130-shuffle-ending.mid",       "bpm": 130, "style": "shuffle", "part": "ending",       "role": "outro",  "label": "Shuffle 130 — Ending" }
+]
