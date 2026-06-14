@@ -150,6 +150,11 @@ export function useJamSession(): JamState & JamActions {
       try {
         await Tone.start()
 
+        // Load WAV samples if not already loaded
+        if (playerRef.current && !playerRef.current.isLoaded) {
+          await playerRef.current.load()
+        }
+
         if (!parsedMidiRef.current) {
           const url = `/loops/${state.selectedLoop.filename}`
           parsedMidiRef.current = await parseMidiFile(url)
